@@ -10,7 +10,7 @@ def home():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        return "Tack"
+        return "Tack!"
     else:
         return render_template("contact.html") 
 
