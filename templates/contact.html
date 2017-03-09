@@ -1,9 +1,13 @@
-{% extends "base.html" %}
+{% extends "home.html" %}
 
 {% block title %}
 Contact us
 {% endblock %}
 
 {% block content %}
-
+<form action="/contact" method="post">
+    <label for="id_message">Message:</label>
+    <textarea name="message" id="id_message"></textarea>
+    <button type="submit">Submit</button>
+</form>
 {% endblock %}
